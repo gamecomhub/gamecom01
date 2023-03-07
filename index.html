@@ -62,11 +62,24 @@
                     <!-- ***** Search End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                        <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="browse.html">Shop</a></li>
+                      <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="streams.html">Games</a></li>
+                        <li><a href='browse'>Shop</a></li>
                         <li><a href="details.html">Newsfeed</a></li>
-                        <li><a href="streams.html">Chat</a></li>
-                        <li><a href="profile.html">Profile <img src="assets/images/profile-header.jpg" alt=""></a></li>
+                      <i class='fa fa-user'></i></a>
+                      @else
+                    <li> <a href="{{ route('login') }}" class="font-semibold text-gray-600 hover:text-gray-900 focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500 p-2 pb-2 mt-1">
+  <i class='fa fa-user'></i></a> </li>
+                      <li><a href="#"><i class='fa-solid fa-cart-shopping'> <ion-icon name="basket"></ion-icon><span class="badge" style="
+                        position: relative;
+                        top: -12px;
+                        left: -11px;
+                        /* right: -25px; */
+                        /* padding: 10px 12px; */
+                        border-radius: 50%;
+                        background-color: red;
+                        color: white;">0 </span></i></a></li>
+                            <li class="d-none"> <a href="streams.html" type="hidden" >Chat</a></li>
                     </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
